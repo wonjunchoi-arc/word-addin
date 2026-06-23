@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Claude / agent tooling (not project code)
+.claude/
+.agents/
+skills-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

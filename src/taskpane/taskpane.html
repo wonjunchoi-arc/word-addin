@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12.2.2 CSR 작성</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h2>12.2.2 사건 삽입</h2>
+  <div id="status">로딩 중...</div>
+
+  <section id="outline-section">
+    <button id="outline-btn">현재 문서 구조 분석</button>
+    <label id="outline-picker" hidden>
+      <span class="outline-label">섹션 이동</span>
+      <select id="outline-select">
+        <option value="">— 섹션 선택 —</option>
+      </select>
+    </label>
+  </section>
+
+  <button id="run-btn">전체 파이프라인 실행</button>
+  <ul id="case-list"></ul>
+
+  <template id="case-item-tpl">
+    <li>
+      <div class="case-title"></div>
+      <div class="case-meta"></div>
+      <button class="insert-btn">문서에 삽입</button>
+    </li>
+  </template>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
